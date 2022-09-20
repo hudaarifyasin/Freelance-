@@ -1,4 +1,4 @@
-body,
+
 ul,
 li,
 h1,
@@ -6,69 +6,63 @@ h2,
 a {
   margin: 0;
   padding: 0;
-  font-family: tahoma;
+  font-family: 'Open Sans', sans-serif;;
 }
 p {
   font-size: 18px;
 }
-
+body{
+    background-color:#ebedef ;
+    margin: 0%;
+    padding: 0%;
+}
+/* only dealing with header image here */
+.header-img {
+    width: 100%;
+    height: 320px;
+    /* margin-bottom: 0; */
+    position: relative;
+}
 header {
-  background-color: #f63232;
-  padding: 20px 0;
+  /* padding: 200px 0px;       // WAS MAKING THE NAV-BAR CONTENTS INACCESSIBLE */
   text-align: center;
   position: fixed;
   width: 100%;
+  /* margin-bottom: 0; */
   top: 0;
   left: 0;
-  z-index: 1;
-}
-header h1 {
-  color: white;
-  border: 8px solid white;
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 36px;
-}
-.banner {
-  position: relative;
-}
-.banner img {
-  max-width: 100%;
-}
-.banner .welcome {
-  color: red
-  padding: 30px;
-  font-size: 60px;
-  position: absolute;
-  left: 0;
-  top: 30%;
-}
-.banner .welcome span {
-  font-size: 1.4em;
+  /* is used to bring text on top of the picture */
+  z-index: -1;
+  font-size: 100px;
+  font-style: italic;
+  color: black;
 }
 
+/* i dont see using class= main-nav anywhere  */
 nav {
-  background: orange;
+  background: rgb(27, 25, 31);
   padding: 20px;
-  margin-top: 50px;
+  /* margin-top: 0%;  tried to remove the white gap between nav-bar and header but didn't work */
 }
-
+/* deals with the nav-bar contents */
 .nav-group {
   display: flex;
   justify-content: space-evenly;
+  /* used to get rid of the bullet design due to ul in html */
   list-style: none;
 }
-
+/* deals with anchor tags in nav-bar */
 nav li a {
   text-decoration: none;
-  color: #4b4b4b;
+  color: #f9f6f6;
 }
 nav li a:hover {
   text-decoration: underline;
 }
-nav li a.join {
-  color: #f63232;
-}
+/* not used in my code */
+/* nav li a.join {
+  color: #f4f3f6;
+} */
 main {
   max-width: 100%;
   width: 1200px;
@@ -78,13 +72,13 @@ main {
 }
 
 article h2 {
-  color: red;
+  color: rgb(197, 179, 21);
   font-size: 48px;
 }
 
 article p {
   line-height: 2em;
-  color: #4b4b4b;
+  color: grey;
 }
 article p::first-line {
   font-weight: bold;
@@ -94,17 +88,20 @@ article p::first-line {
   text-align: center;
   margin: 80px 0;
   white-space: nowrap;
+  animation: pulse 5s;
 }
 .images li {
   display: inline-block;
   list-style-type: none;
-  width: 40%;
+  /* change image width  */
+  width: 50%;
   margin: 20px 5%;
   position: relative;
 }
 
 .images li:hover {
-  top: -4px;
+  /* changed it from top ---> bottom  */
+  bottom: -10px;
 }
 
 .images li img {
@@ -114,13 +111,12 @@ article p::first-line {
 /* sign up section */
 
 section.join {
-  background-color: #f4f4f4;
-  text-align: center;
-  padding: 60px 20px;
-  color: #4b4b4b;
-  font-size: 36px;
-}
-
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+    font-size: 36px;
+  }
 form input {
   margin: 20px 0;
   padding: 10px 20px;
@@ -135,7 +131,7 @@ form input:valid {
 /* footer */
 
 footer {
-  background: #f63232;
+  background: black;
   color: white;
   padding: 10px;
   text-align: center;
