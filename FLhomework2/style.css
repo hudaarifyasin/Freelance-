@@ -1,0 +1,41 @@
+
+body{
+	background-color:#030202;
+	color: rgb(244, 11, 27);
+}
+.img{
+	display:flex;
+	gap:20px;
+}
+.images{
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+.images{
+	display:flex;
+		gap:70px
+}
+.page-images{
+	width: 100%;
+	}
+h1{
+	text-align: center;
+	color: rgb(237, 137, 5);
+}
+.image1{
+	width: 300px;
+	height:200px;
+}
+.image2{
+	width: 300px;
+	height:200px;
+}
+.image3{
+	width: 300px;
+	height:200px;
+}
+.images2{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 50px;
+}
